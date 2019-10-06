@@ -39,7 +39,7 @@ All data are sent to the IoT Hub and displayed as intuitive graphs over time. Th
 ## Hardware Setup
 
 |Sensor|Breadboard|AdaFruit Feather|Azure Sphere|
-|----------|-----------|------------|
+|:----------|-----------|------------|------------|
 |PIR motion sensor : data output pin|| IO pin 12 |-|
 |PIR motion sensor : ground | ground |||
 |PIR motion sensor : power|power|||

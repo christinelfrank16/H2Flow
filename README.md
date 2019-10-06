@@ -2,7 +2,7 @@
 
 #### A IoT solution to monitor water usage for 2019 PDX Hackathon, 06-Oct-2019
 
-#### By **Christine Frank, Anjani , Catie Olson, Emily Chen, Geena Fong**
+#### By **Christine Frank, Anjani Kodali, Catie Olson, Emily Chen, Geena Fong**
 
 ## Description
 
@@ -71,4 +71,4 @@ Repo: https://github.com/christinelfrank16/H2Flow
 
 *This application is licensed under the MIT license*
 
-Copyright (c) 2019 **Christine Frank, Anjani , Catie Olson, Emily Chen, Geena Fong**
+Copyright (c) 2019 **Christine Frank, Anjani Kodali, Catie Olson, Emily Chen, Geena Fong**

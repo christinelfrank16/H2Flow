@@ -1,6 +1,6 @@
  
 int ledPin = 0;                // choose the pin for the LED
-int inputPin =12;               // choose the input pin (for PIR sensor)
+int inputPirPin =12;               // choose the input pin (for PIR sensor)
 int pirState = 0;             // we start, assuming no motion detected
 int lastPirState = LOW;                    // variable to store previous pir status
 int button = 13;              // button to represent water flow
@@ -21,7 +21,7 @@ int sumFractional;
  
 void setup() {
   pinMode(ledPin, OUTPUT);      // declare LED as output
-  pinMode(inputPin, INPUT);     // declare sensor as input
+  pinMode(inputPirPin, INPUT);     // declare sensor as input
   pinMode(button, INPUT_PULLUP); // set internal pull up resistor
  
   Serial.begin(9600);
@@ -40,7 +40,7 @@ void loop(){
       sumElapsedTime = 0;   // reset total motion time
     }
 
-    pirState = digitalRead(inputPin);  // read input value
+    pirState = digitalRead(inputPirPin);  // read input value
     if (pirState == HIGH && lastPirState == LOW && timing == false) {            // check if motion detected & timer not running
       digitalWrite(ledPin, HIGH);  // turn LED ON
       startTime = millis();
@@ -76,9 +76,9 @@ void loop(){
         sumElapsedTime += elapsedTime;
       }
 
-      Serial.println( (float)(waterElapsedTime / 60000.0));         // divide by 1000 to convert to minutes - then cast to an int to print
+      Serial.println( (float)(waterElapsedTime / 60000.0));         // divide by 60000 to convert to minutes - then cast to a float to print
 
-       Serial.println( (float)(sumElapsedTime / 60000.0));         // divide by 1000 to convert to minutes - then cast to an int to print
+       Serial.println( (float)(sumElapsedTime / 60000.0));         // divide by 60000 to convert to minutes - then cast to a float to print
 
 
        Serial.println("END");

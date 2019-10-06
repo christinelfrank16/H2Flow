@@ -92,9 +92,9 @@
   </body>
   <script type="text/javascript">
 
-    var gallonsUsed = 0; //fill in from blob hopefully
-    var timeElapsed = 0; //fill in from blob hopefully
-    var cost = 0; //calculate and fill in
+    var gallonsUsed = 1.62; //fill in from blob hopefully
+    var timeElapsed = 64.7; //fill in from blob hopefully
+    var cost = 0.015; //calculate and fill in
 
     var gallons = d3.select('body')
                     .append('div')
@@ -112,7 +112,7 @@
                     .text("seconds elapsed")
     var money = d3.select('body')
                     .append('div')
-                    .text("$" + timeElapsed)
+                    .text("$" + cost)
                     .style("font-size", "24px")
                     .attr("class", "centersmall")
                     .append('p')

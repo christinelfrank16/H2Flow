@@ -1,4 +1,4 @@
-# H2Flow
+# Team 12: H2Flow
 
 #### A IoT solution to monitor water usage for 2019 PDX Hackathon, 06-Oct-2019
 
